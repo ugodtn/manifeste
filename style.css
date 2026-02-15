@@ -146,6 +146,7 @@ h3 {
 .authors {
   padding: 0;
   list-style: none;
+  margin-bottom: 4rem;
 }
 
 .author {
@@ -158,6 +159,10 @@ h3 {
 
 .author p {
   margin: 0;
+}
+
+#signer h1 {
+  display: none !important;
 }
 
 #signataires h3 {
