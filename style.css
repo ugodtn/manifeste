@@ -1,5 +1,12 @@
 @font-face {
     font-family: 'Atkinson';
+    src:    url('font/AtkinsonHyperlegibleNext-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atkinson';
     src:    url('font/AtkinsonHyperlegibleNext-ExtraBold.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
@@ -33,14 +40,139 @@
     font-style: normal;
 }
 
+html {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.05' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='40' specularConstant='3' specularExponent='20' lighting-color='%23fda408' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E%3CfeDistantLight azimuth='3' elevation='163'%3E%3C/feDistantLight%3E%3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23ffffff'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23fda408' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E");
+}
+
 body {
-  max-width: 800px;
-  margin: 4rem auto;
-  padding: 1rem;
+  max-width: 902px;
+  margin: 0 auto;
+  padding: 0 1rem;
   font-family: 'Atkinson';
+  font-size: 1.25rem;
+  color: rgb(32, 32, 32);
+
+  @media (min-width: 820px) {
+    font-size: 1.5rem;
+  }
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: 820px) {
+    padding-right: 80px;
+  }
+}
+
+header {
+  width: 100%;
+
+  @media (min-width: 924px) {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 80px;
+  }
+}
+
+nav {
+  max-width: 140px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+
+  @media (min-width: 924px) {
+    position: sticky;
+    top: 2rem;
+    left: 0;
+  }
+}
+
+nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 924px) {
+    border-right: solid;
+  }
+}
+
+nav li {
+  margin-bottom: 1rem;
+
+  @media (min-width: 924px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  padding-right: 1rem;
+  /* color: rgb(32, 32, 32); */
+}
+
+main {
+  max-width: 640px;
+}
+
+main p:first-child {
+  margin-top: 0;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 900;
+  padding-top: 0;
+
+  @media (min-width: 820px) {
+    font-size: 4rem;
+    padding-top: 4rem;
+  }
+}
+
+h2 {
+  padding-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.authors {
+  padding: 0;
+  list-style: none;
+}
+
+.author {
+  margin-bottom: 2rem;
+}
+
+.author h3 {
+  margin: 0;
+}
+
+.author p {
+  margin: 0;
+}
+
+#signataires h3 {
+  font-size: 1.25rem;
+}
+
+#signataires li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#references p {
+  font-size: 1rem;
+}
+
+footer {
+  padding: 4rem 0;
 }
