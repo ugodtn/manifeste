@@ -65,11 +65,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding-top: 0;
 
   @media (min-width: 820px) {
     padding-right: 80px;
-    padding-top: 0;
+    padding-top: 2rem;
   }
 }
 
