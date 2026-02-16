@@ -207,6 +207,10 @@ h3 {
     height: 1364px;
   }
 
+  @media (min-width: 375px) {
+    height: 1300px;
+  }
+
   @media (min-width: 410px) {
     height: 1260px;
   }
