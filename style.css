@@ -200,6 +200,30 @@ h3 {
   margin: 0;
 }
 
+#formualire {
+  height: 1420px;
+
+  @media (min-width: 360px) {
+    height: 1364px;
+  }
+
+  @media (min-width: 410px) {
+    height: 1260px;
+  }
+
+  @media (min-width: 480px) {
+    height: 1180px;
+  }
+
+  @media (min-width: 600px) {
+    height: 1120px;
+  }
+
+  @media (min-width: 670px) {
+    height: 980px;
+  }
+}
+
 #signataires h3 {
   font-size: 1.25rem;
 }
