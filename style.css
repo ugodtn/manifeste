@@ -57,6 +57,10 @@ body {
   }
 }
 
+a {
+  color: mediumblue;
+}
+
 #content {
   display: flex;
   flex-wrap: wrap;
@@ -113,7 +117,19 @@ nav li {
 nav a {
   text-decoration: none;
   padding-right: 1rem;
-  /* color: rgb(32, 32, 32); */
+}
+
+nav .button {
+  color: white;
+  background-color: mediumblue;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+
+  @media (min-width: 924px) {
+    margin-left: 0.75rem;
+    font-size: 1.25rem;
+  }
+
 }
 
 main {
@@ -127,11 +143,12 @@ main p:first-child {
 h1 {
   font-size: 3rem;
   font-weight: 900;
-  padding-top: 0;
+  padding-top: 2rem;;
+  margin-top: 0;
 
   @media (min-width: 820px) {
     font-size: 4rem;
-    padding-top: 4rem;
+    padding-top: 6rem;
   }
 }
 
@@ -158,10 +175,6 @@ h3 {
 
 .author p {
   margin: 0;
-}
-
-#signer h1 {
-  display: none !important;
 }
 
 #signataires h3 {
