@@ -201,8 +201,9 @@ h3 {
   margin: 0;
 }
 
-#formualire {
+#formulaire {
   height: 1420px;
+  background-color: white;
 
   @media (min-width: 360px) {
     height: 1364px;
