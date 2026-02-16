@@ -69,6 +69,7 @@ a {
 
   @media (min-width: 820px) {
     padding-right: 80px;
+    padding-top: 0;
   }
 }
 
