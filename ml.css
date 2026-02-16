@@ -45,7 +45,7 @@ html {
 }
 
 body {
-  max-width: 902px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
   font-family: 'Atkinson', 'Arial';
@@ -61,99 +61,15 @@ a {
   color: mediumblue;
 }
 
-#content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  @media (min-width: 820px) {
-    padding-right: 80px;
-  }
-}
-
 header {
-  width: 100%;
-
-  @media (min-width: 924px) {
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: 0;
-    padding-right: 80px;
-  }
-}
-
-nav {
-  max-width: 140px;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  align-self: flex-start;
-
-  @media (min-width: 924px) {
-    position: sticky;
-    top: 2rem;
-    left: 0;
-  }
-}
-
-nav ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  @media (min-width: 924px) {
-    border-right: solid;
-  }
-}
-
-nav li {
-  margin-bottom: 1rem;
-
-  @media (min-width: 924px) {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-nav li:last-child {
-  margin-bottom: 1.25rem;
-}
-
-nav a {
-  text-decoration: none;
-  padding-right: 1rem;
-}
-
-nav .button {
-  color: white;
-  background-color: mediumblue;
-  padding: 0.75rem 1.5rem 0.5rem 1.5rem;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-
-  @media (min-width: 924px) {
-    font-size: 1rem;
-  }
-
-}
-
-main {
-  max-width: 640px;
-}
-
-main p:first-child {
-  margin-top: 0;
+  padding-top: 3rem;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5em;
   font-weight: 900;
-  padding-top: 2rem;
+  padding-top: 3rem;
   margin-top: 0;
-
-  @media (min-width: 820px) {
-    font-size: 4rem;
-    padding-top: 6rem;
-  }
 }
 
 h2 {
@@ -162,36 +78,6 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-}
-
-.authors {
-  padding: 0;
-  list-style: none;
-}
-
-.author {
-  margin-bottom: 2rem;
-}
-
-.author h3 {
-  margin: 0;
-}
-
-.author p {
-  margin: 0;
-}
-
-#signataires h3 {
-  font-size: 1.25rem;
-}
-
-#signataires li {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-#references p {
-  font-size: 1rem;
 }
 
 footer {
