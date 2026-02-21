@@ -156,6 +156,16 @@ nav .button:hover, nav .button:focus {
   background-color: white;
 }
 
+nav .decompte {
+  font-size: 1rem;
+  margin-left: 0rem;
+  margin-top: 1rem;
+
+  @media (min-width: 924px) {
+    margin-left: 1.5rem;
+  }
+}
+
 main {
   max-width: 640px;
 }
@@ -229,6 +239,10 @@ h3 {
   @media (min-width: 670px) {
     height: 980px;
   }
+}
+
+#signataires .update {
+  font-size: 1rem;
 }
 
 #signataires h3 {
