@@ -162,7 +162,7 @@ nav .decompte {
   margin-top: 1rem;
 
   @media (min-width: 924px) {
-    margin-left: 1.25rem;
+    margin-left: 0.75rem;
   }
 }
 
