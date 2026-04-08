@@ -206,10 +206,15 @@ h3 {
 
 .author h3 {
   margin: 0;
+  text-transform: capitalize;
 }
 
 .author p {
   margin: 0;
+}
+
+.author p:first-letter {
+    text-transform: uppercase;
 }
 
 #formulaire {
